@@ -1,0 +1,14 @@
+.box1, .box2, .box3{
+	margin: 20px;
+}
+#text{
+	width: 500px;
+	height: 500px;
+}
+button{
+	margin: 20px;
+}
+.show{
+	text-align: center;
+	font-size: 50px;
+}

@@ -1,0 +1,25 @@
+<div *ngIf="status">
+	<div class="box1">
+		Введите имя
+		<input type="text" [(ngModel)]="name">
+	</div>
+	<div class="box2">
+		Телефон
+		<input type="text" [(ngModel)]="phone">
+	</div>
+	<div class="box3">
+		<div>
+			Введите сообщение
+		</div>
+		<input type="text" id="text" [(ngModel)]="massege">
+	</div>
+	<div class="box4">
+		<button type="button" (click)="showContacts()">Отправить</button>
+	</div>
+</div>
+<div class="show" *ngIf="!status">
+	<div>{{name}}</div>
+	<div>{{phone}}</div>
+	<div>Сообщение которое Вы оставили</div>
+	<div>{{massege}}</div>
+</div>
